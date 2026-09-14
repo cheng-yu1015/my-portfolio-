@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人作品集 | 大學新鮮人</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            float: left;
+            font-size: 1.5rem;
+        }
+        header nav {
+            float: right;
+            margin-top: 5px;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+        }
+        header nav a:hover {
+            color: #3498db;
+        }
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            background: #e74c3c;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #c0392b;
+        }
+        .section {
+            padding: 3rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .section h3 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            font-size: 1.8rem;
+        }
+        .skills-list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .skills-list li {
+            background: #e2e8f0;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        .project-card h4 {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        .project-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+        .card-link {
+            display: inline-block;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <a href="#about">關於我</a>
+                <a href="#skills">專業技能</a>
+                <a href="#projects">精選作品</a>
+                <a href="#contact">聯絡方式</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主視覺區 -->
+    <section class="hero">
+        <div class="container">
+            <h2>嗨，我是 鄭丞妤</h2>
+            <p>正在探索無限可能的資管系/資工系大學新鮮人，專注於打造有溫度的數位體驗。</p>
+            <a href="#projects" class="btn">查看作品</a>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about" class="container section">
+        <h3>關於我</h3>
+        <p>目前就讀大學一年級。熱愛學習新技術，目標是在大學四年內累積豐富的實戰經驗，成為能獨當一面的軟體工程師/設計師。</p>
+    </section>
+
+    <!-- 專業技能 -->
+    <section id="skills" class="container section">
+        <h3>專業技能</h3>
+        <ul class="skills-list">
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (學習中)</li>
+            <li>Git & GitHub</li>
+            <li>Python</li>
+        </ul>
+    </section>
+
+    <!-- 精選作品 -->
+    <section id="projects" class="container section">
+        <h3>精選作品</h3>
+        <div class="project-grid">
+            <!-- 新增的卡片：數位科技概論作業 -->
+            <div class="project-card">
+                <div>
+                    <h4>作品一：數位科技概論學習紀錄</h4>
+                    <p>包含 HTML 基礎語法（活動 01-04）與 CSS 排版風格（活動 05-09）等課堂作業與練習成果。</p>
+                </div>
+                <a href="dt-hw.html" class="card-link">查看細部頁面 &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h4>作品二：期末網頁專題</h4>
+                    <p>使用 HTML/CSS 刻出具有響應式設計的個人介紹頁面。</p>
+                </div>
+                <a href="#" class="card-link">了解更多 &rarr;</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h4>作品三：Python 小遊戲</h4>
+                    <p>利用 Python 實作的文字冒險遊戲，訓練邏輯與演算法基礎。</p>
+                </div>
+                <a href="#" class="card-link">了解更多 &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <footer id="contact">
+        <div class="container">
+            <h3>聯絡方式</h3>
+            <p>Email: your.email@example.com</p>
+            <p>GitHub: <a href="https://github.com/你的帳號" target="_blank">github.com/你的帳號</a></p>
+            <p>&copy; 2026 鄭丞妤. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
