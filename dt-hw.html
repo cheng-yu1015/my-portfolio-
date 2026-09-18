@@ -60,44 +60,41 @@
         }
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
-        .hw-card {
+        .card {
             border: 1px solid #e2e8f0;
             border-radius: 8px;
             padding: 1.2rem;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            background: #fafafa;
             transition: transform 0.2s, box-shadow 0.2s;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            text-decoration: none;
+            color: inherit;
         }
-        .hw-card:hover {
+        .card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            background: white;
         }
-        .hw-card h3 {
+        .card h3 {
             font-size: 1.15rem;
             color: #2c3e50;
             margin-bottom: 0.5rem;
         }
-        .hw-card p {
+        .card p {
             font-size: 0.95rem;
             color: #666;
             margin-bottom: 1rem;
             flex-grow: 1;
         }
-        .hw-card a {
-            display: inline-block;
+        .card-link {
             color: #e74c3c;
-            text-decoration: none;
             font-weight: bold;
             font-size: 0.9rem;
-        }
-        .hw-card a:hover {
-            text-decoration: underline;
         }
         footer {
             text-align: center;
@@ -115,92 +112,49 @@
         <a href="index.html" class="back-btn">&larr; 返回作品集首頁</a>
         
         <h1>數位科技概論 - 課堂作業與學習紀錄</h1>
-        <p class="subtitle">記錄課堂所學之 HTML 與 CSS 實作練習</p>
+        <p class="subtitle">記錄課堂所學之 HTML 與 CSS 實作練習成果</p>
 
-        <!-- HTML 作業卡片區 -->
+        <!-- HTML 作業區塊 -->
         <div class="hw-section">
             <h2>HTML 基礎練習（活動 01-04）</h2>
             <div class="card-grid">
                 
-                <!-- 水與生活作業卡片 -->
-                <div class="hw-card">
+                <!-- 活動 01 作業卡片：連結指向 01-html-text-u11517008.html -->
+                <a href="01-html-text-u11517008.html" class="card">
                     <div>
                         <h3>活動 01：水與生活</h3>
-                        <p>國小科學社「水與生活：小小科學探索日」活動介紹頁，練習標題層級與 H₂O 下標及 cm² 上標語法。</p>
+                        <p>運用 HTML 文字層級標籤（h1、h2、h3、p、b、i、sub、sup）製作科學活動介紹頁。</p>
                     </div>
-                    <a href="water-life.html" target="_blank">檢視「水與生活」作業 &rarr;</a>
-                </div>
+                    <span class="card-link">開啟作業頁面 &rarr;</span>
+                </a>
 
-                <div class="hw-card">
+                <!-- 活動 02 預留卡片 -->
+                <div class="card" style="cursor: not-allowed; opacity: 0.7;">
                     <div>
-                        <h3>活動 02：多媒體元件</h3>
-                        <p>校園自然觀察任務卡，包含圖片、提示音（Audio）與觀察短片（Video）播放控制。</p>
+                        <h3>活動 02：校園自然觀察任務卡</h3>
+                        <p>結合圖片（PNG/SVG）、提示音與影片，練習多媒體控制與替代文字標記。</p>
                     </div>
-                    <a href="#">檢視作業 &rarr;</a>
+                    <span class="card-link" style="color: #999;">即將開放</span>
                 </div>
 
-                <div class="hw-card">
+                <!-- 活動 03 預留卡片 -->
+                <div class="card" style="cursor: not-allowed; opacity: 0.7;">
                     <div>
-                        <h3>活動 03：清單與表格</h3>
-                        <p>紙橋挑戰社活動準備頁，練習無序清單、有序清單與任務分工表格結構。</p>
+                        <h3>活動 03：紙橋挑戰社準備頁</h3>
+                        <p>學習有序/無序清單（ul/ol）與結構化表格（table/th/td）的資料整理。</p>
                     </div>
-                    <a href="#">檢視作業 &rarr;</a>
+                    <span class="card-link" style="color: #999;">即將開放</span>
                 </div>
 
-                <div class="hw-card">
+                <!-- 活動 04 預留卡片 -->
+                <div class="card" style="cursor: not-allowed; opacity: 0.7;">
                     <div>
-                        <h3>活動 04：表單元件設計</h3>
-                        <p>放學後社團體驗報名表，包含單行輸入、下拉選單、單選/複選框與多行留言區。</p>
+                        <h3>活動 04：社團體驗報名表</h3>
+                        <p>設計單行輸入框、下拉選單、單選/複選框及多行文字區的表單介面。</p>
                     </div>
-                    <a href="#">檢視作業 &rarr;</a>
+                    <span class="card-link" style="color: #999;">即將開放</span>
                 </div>
 
-            </div>
-        </div>
-
-        <!-- CSS 作業卡片區 -->
-        <div class="hw-section">
-            <h2>CSS 視覺排版與無障礙（活動 05-09）</h2>
-            <div class="card-grid">
-                <div class="hw-card">
-                    <div>
-                        <h3>活動 05：視覺風格與色彩</h3>
-                        <p>運用 HEX 色碼調整標題、卡片留白與字體行高。</p>
-                    </div>
-                    <a href="#">檢視作業 &rarr;</a>
-                </div>
-
-                <div class="hw-card">
-                    <div>
-                        <h3>活動 06：整頁版型配置</h3>
-                        <p>使用 CSS Grid 切換與比較四種不同區域比例的版型配置。</p>
-                    </div>
-                    <a href="#">檢視作業 &rarr;</a>
-                </div>
-
-                <div class="hw-card">
-                    <div>
-                        <h3>活動 07：卡片對齊與 Flexbox</h3>
-                        <p>運用 Flexbox 實現作品卡對齊與圖片 object-fit 裁切防變形。</p>
-                    </div>
-                    <a href="#">檢視作業 &rarr;</a>
-                </div>
-
-                <div class="hw-card">
-                    <div>
-                        <h3>活動 08：RWD 響應式網頁設計</h3>
-                        <p>加入 @media 媒體查詢，使網站能在電腦與手機視窗間彈性切換版型。</p>
-                    </div>
-                    <a href="#">檢視作業 &rarr;</a>
-                </div>
-
-                <div class="hw-card">
-                    <div>
-                        <h3>活動 09：無障礙檢測與修正</h3>
-                        <p>利用 WAVE 工具檢測並修正色彩對比度不足與表單標籤缺漏問題。</p>
-                    </div>
-                    <a href="#">檢視作業 &rarr;</a>
-                </div>
             </div>
         </div>
 
