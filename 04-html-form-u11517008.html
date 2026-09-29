@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放學後社團體驗表</title>
+</head>
+<body>
+
+    <p><a href="dt-hw.html">&larr; 返回數位科技概論作業列表</a> | <a href="index.html">返回作品集首頁</a></p>
+
+    <h1>放學後社團體驗表</h1>
+    <p>這是介面練習，資料不會送出或保存，不能當成正式報名。</p>
+
+    <!-- 暱稱：單行文字 -->
+    <p>
+        <label for="nickname">我的暱稱</label><br>
+        <input id="nickname" name="nickname" type="text" placeholder="例如小星星">
+    </p>
+
+    <!-- 社團：下拉選單 -->
+    <p>
+        <label for="club">想體驗的社團</label><br>
+        <select id="club" name="club">
+            <option value="">請選擇社團</option>
+            <option value="story-theater">故事劇場</option>
+            <option value="science-craft">科學手作</option>
+            <option value="board-game">桌遊挑戰</option>
+        </select>
+    </p>
+
+    <!-- 日期：單選 -->
+    <fieldset>
+        <legend>方便參加的日子</legend>
+        <p><label><input type="radio" name="day" value="tuesday"> 星期二</label></p>
+        <p><label><input type="radio" name="day" value="thursday"> 星期四</label></p>
+        <p><label><input type="radio" name="day" value="friday"> 星期五</label></p>
+    </fieldset>
+
+    <!-- 活動方式：複選 -->
+    <fieldset>
+        <legend>我期待的活動方式</legend>
+        <p><label><input type="checkbox" name="style" value="hands-on"> 動手製作</label></p>
+        <p><label><input type="checkbox" name="style" value="teamwork"> 和同學合作</label></p>
+        <p><label><input type="checkbox" name="style" value="present"> 上台分享</label></p>
+    </fieldset>
+
+    <!-- 我新增的欄位：年級（下拉選單） -->
+    <p>
+        <label for="grade">我的年級</label><br>
+        <select id="grade" name="grade">
+            <option value="">請選擇年級</option>
+            <option value="grade3">三年級</option>
+            <option value="grade4">四年級</option>
+            <option value="grade5">五年級</option>
+            <option value="grade6">六年級</option>
+        </select>
+    </p>
+    <p>我選擇下拉選單，因為年級只有固定幾個答案，讓學生從選項中挑選，比自己打字更不容易打錯。</p>
+
+    <!-- 留言：多行文字 -->
+    <p>
+        <label for="message">想告訴老師的事</label><br>
+        <textarea id="message" name="message" rows="5" cols="32" placeholder="例如我想和同學一起完成一個小作品"></textarea>
+    </p>
+
+    <!-- 停用按鈕 -->
+    <p><button type="button" disabled>練習版，尚未開放報名</button></p>
+
+</body>
+</html>

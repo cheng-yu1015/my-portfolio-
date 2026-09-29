@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>把內容排得整齊</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 24px; font-family: "Microsoft JhengHei", sans-serif; color: #243d46; background: #f5f2eb; line-height: 1.7; }
+h1 { line-height: 1.3; } a { color: #17596e; }
+.note { padding: 12px; background: #e5eeeb; }
+/* 練習 A：控制整組卡片的排列 */
+.cards { display: flex; gap: 24px; align-items: stretch; flex-wrap: wrap; }
+.card { flex: 1 1 240px; background: white; padding: 16px; border: 1px solid #c9d6d0; }
+/* 練習 B：目前保留每張圖原本比例；請觀察高度差 */
+.card img { display: block; width: 100%; height: 160px; object-fit: cover; }
+.card h2 { font-size: 22px; }
+
+</style>
+</head>
+<body>
+<p><a href="dt-hw.html">&larr; 返回數位科技概論作業列表</a> | <a href="index.html">返回作品集首頁</a></p>
+<h1>把內容排得整齊</h1>
+<p class="note">三張封面是本課製作的幾何 SVG，長寬比例不同，供排列與裁切練習。它們不需要網路。</p>
+<div class="cards">
+<article class="card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iMzYwIiB2aWV3Qm94PSIwIDAgNjAwIDM2MCI+PHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzNjAiIGZpbGw9IiNiOGNlYzciLz48Y2lyY2xlIGN4PSIzMDAuMCIgY3k9IjE4MC4wIiByPSI5My42MDAwMDAwMDAwMDAwMSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjciLz48cmVjdCB4PSIyMTAuMCIgeT0iMTI1Ljk5OTk5OTk5OTk5OTk5IiB3aWR0aD0iMTgwLjAiIGhlaWdodD0iMTA4LjAiIHJ4PSIxMiIgZmlsbD0iIzMxNTY2MyIvPjwvc3ZnPg==" alt="橫向故事作品幾何封面"><h2>故事偵探社</h2><p>閱讀故事，找出推理線索。</p></article>
+<article class="card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiB2aWV3Qm94PSIwIDAgNDAwIDQwMCI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNkN2M1YTQiLz48Y2lyY2xlIGN4PSIyMDAuMCIgY3k9IjIwMC4wIiByPSIxMDQuMCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjciLz48cmVjdCB4PSIxNDAuMCIgeT0iMTQwLjAiIHdpZHRoPSIxMjAuMCIgaGVpZ2h0PSIxMjAuMCIgcng9IjEyIiBmaWxsPSIjMzE1NjYzIi8+PC9zdmc+" alt="正方形科學作品幾何封面"><h2>小小科學推理站</h2><p>先做預測，再觀察現象，練習提出有根據的解釋。這張卡片刻意放比較長的文字。</p></article>
+<article class="card"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNjAiIGhlaWdodD0iNTQwIiB2aWV3Qm94PSIwIDAgMzYwIDU0MCI+PHJlY3Qgd2lkdGg9IjM2MCIgaGVpZ2h0PSI1NDAiIGZpbGw9IiNiN2M5ZDkiLz48Y2lyY2xlIGN4PSIxODAuMCIgY3k9IjI3MC4wIiByPSI5My42MDAwMDAwMDAwMDAwMSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iLjciLz48cmVjdCB4PSIxMjUuOTk5OTk5OTk5OTk5OTkiIHk9IjE4OS4wIiB3aWR0aD0iMTA4LjAiIGhlaWdodD0iMTYyLjAiIHJ4PSIxMiIgZmlsbD0iIzMxNTY2MyIvPjwvc3ZnPg==" alt="直向導覽作品幾何封面"><h2>我的主題導覽</h2><p>用三個探索點，帶訪客認識校園。</p></article>
+</div>
+<p>觀察紀錄：我選 cover，因為它能讓三張封面等高又不變形，雖然邊緣可能被裁切，但版面整齊；長文字沒有被截斷，縮窄視窗後卡片會換行。</p>
+</body>
+</html>
